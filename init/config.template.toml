@@ -1,0 +1,87 @@
+Env = 'dev'
+Module = 'test'
+
+[dev]
+ConfigTemplateDir = '.'
+Debug = true
+NoInject = []
+Proxy = ''
+
+[dev.ConfigCenter]
+Format = 'toml'
+Type = 'local'
+
+[dev.ConfigCenter.local]
+AutoReload = false
+AutoReloadInterval = 0
+AutoReloadType = ''
+ConfigPath = 'local.toml'
+
+[dev.ConfigCenter.nacos]
+AppName = ''
+BetaIps = ''
+CasMd5 = ''
+Content = ''
+DataId = ''
+EncryptedDataKey = ''
+Group = ''
+KmsKeyId = ''
+ServerConfigs = []
+SrcUser = ''
+Tag = ''
+Type = ''
+UsageType = ''
+
+[dev.ConfigCenter.nacos.ClientConfig]
+AccessKey = ''
+AppKey = ''
+AppName = ''
+AppendToStdout = false
+AsyncUpdateService = false
+BeatInterval = 0
+CacheDir = ''
+ClusterName = ''
+ContextPath = ''
+DisableUseSnapShot = false
+Endpoint = ''
+EndpointContextPath = ''
+EndpointQueryParams = ''
+KMSVersion = ''
+ListenInterval = 0
+LogDir = ''
+LogLevel = ''
+NamespaceId = ''
+NotLoadCacheAtStart = false
+OpenKMS = false
+Password = ''
+RegionId = ''
+SecretKey = ''
+TimeoutMs = 0
+UpdateCacheWhenEmpty = false
+UpdateThreadNum = 0
+Username = ''
+
+[dev.ConfigCenter.nacos.ClientConfig.KMSv3Config]
+CaContent = ''
+ClientKeyContent = ''
+Endpoint = ''
+Password = ''
+
+[dev.ConfigCenter.nacos.ClientConfig.LogRollingConfig]
+Compress = false
+LocalTime = false
+MaxAge = 0
+MaxBackups = 0
+MaxSize = 0
+
+[dev.ConfigCenter.nacos.ClientConfig.LogSampling]
+Initial = 0
+Thereafter = 0
+Tick = 0
+
+[dev.ConfigCenter.nacos.ClientConfig.TLSCfg]
+CaFile = ''
+CertFile = ''
+Enable = false
+KeyFile = ''
+ServerNameOverride = ''

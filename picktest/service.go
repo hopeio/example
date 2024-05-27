@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/hopeio/cherry/context/gin_context"
+	"github.com/hopeio/cherry/context/ginctx"
 	errorsi "github.com/hopeio/cherry/utils/errors"
 	"github.com/hopeio/pick"
 )
@@ -24,7 +24,7 @@ type User struct {
 	Gender int    `json:"gender,omitempty"`
 }
 
-func (*UserService) Get(ctx *gin_context.Context, req *Object) (*User, error) {
+func (*UserService) Get(ctx *ginctx.Context, req *Object) (*User, error) {
 	pick.Api(func() {
 		pick.Get("/:id").
 			Title("用户详情").
@@ -43,7 +43,7 @@ type Req struct {
 	Name string `json:"name"`
 }
 
-func (*UserService) GetErr(ctx *gin_context.Context, req *Req) (*User, error) {
+func (*UserService) GetErr(ctx *ginctx.Context, req *Req) (*User, error) {
 	pick.Api(func() {
 		pick.Get("/err/:id").
 			Title("用户详情返回错误").

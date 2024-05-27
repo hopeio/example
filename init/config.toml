@@ -1,0 +1,14 @@
+Env = 'dev'
+Module = 'test'
+
+[dev]
+ConfigTemplateDir = '.'
+Debug = true
+
+
+[dev.ConfigCenter]
+Format = 'toml'
+Type = 'local'
+
+[dev.ConfigCenter.local]
+ConfigPath = 'local.toml'

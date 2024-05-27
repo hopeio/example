@@ -1,0 +1,50 @@
+A = 'A'
+B = 0
+T = 0
+
+[Auth]
+Token = ''
+
+[Mqtt]
+AutoAckDisabled = false
+AutoReconnect = false
+Brokers = []
+CAFile = ''
+CleanSession = false
+ClientID = ''
+ConnectRetry = false
+ConnectRetryInterval = 0
+ConnectTimeout = 0
+KeepAlive = 0
+MaxReconnectInterval = 0
+MaxResumePubInFlight = 0
+MessageChannelDepth = 0
+Order = false
+Password = ''
+PingTimeout = 0
+ProtocolVersion = 0
+ResumeSubs = false
+Servers = []
+Username = ''
+WillEnabled = false
+WillPayload = []
+WillQos = 0
+WillRetained = false
+WillTopic = ''
+WriteTimeout = 0
+
+[Mqtt.Dialer]
+DualStack = false
+FallbackDelay = 0
+KeepAlive = 0
+Timeout = 0
+
+[Mqtt.Dialer.Resolver]
+PreferGo = false
+StrictErrors = false
+
+[Mqtt.HTTPHeaders]
+
+[Mqtt.WebsocketOptions]
+ReadBufferSize = 0
+WriteBufferSize = 0

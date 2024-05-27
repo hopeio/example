@@ -1,0 +1,11 @@
+A = 'C'
+B = 1
+T = 2
+
+[Auth]
+Token = 'xxx'
+
+[Mqtt]
+ClientID = 'test_111111'
+Brokers = ["ssl://broker.emqx.io:8883"]
+CAFile = './broker.emqx.io-ca.crt'

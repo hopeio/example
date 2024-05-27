@@ -1,0 +1,11 @@
+Module: app
+Env: dev
+
+dev:
+  debug: true
+  ConfigTemplateDir: "."
+  configCenter:
+    Format: yaml
+    configType: local
+    local:
+      ConfigPath: local.yaml
