@@ -1,0 +1,15 @@
+syntax = "proto3";
+package test;
+
+import "patch/go.proto";
+
+option go_package = "collection/test";
+
+message User {
+  uint64 id = 1 [(go.field).tags = 'xml:"id,attr"'];
+  string name = 2 ;
+  string account = 17 ;
+  string password = 5 ;
+  string mail = 6 [(go.field).tags = 'validate:"email" json:"email"'];
+  string phone = 7 [(go.field).tags = 'validate:"phone"'];
+}
