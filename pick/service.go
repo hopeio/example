@@ -45,7 +45,7 @@ type Req struct {
 
 func (*UserService) GetErr(ctx *ginctx.Context, req *Req) (*User, error) {
 	pick.Api(func() {
-		pick.Get("/err/:id").
+		pick.Post("/err/:id").
 			Title("用户详情返回错误").
 			CreateLog("1.0.0", "jyb", "2024/04/16", "创建").End()
 	})
@@ -55,4 +55,20 @@ func (*UserService) GetErr(ctx *ginctx.Context, req *Req) (*User, error) {
 		Code:    1,
 		Message: "error",
 	}
+}
+
+type Signup struct {
+	Name     string `json:"name"`
+	Password string `json:"password"`
+}
+
+func (*UserService) Signup(ctx *ginctx.Context, req *Signup) (*User, error) {
+	pick.Api(func() {
+		pick.Post("").
+			Title("用户注册").
+			CreateLog("1.0.0", "jyb", "2024/06/17", "创建").End()
+	})
+	fmt.Println(req.Name)
+	// dao
+	return &User{Id: 1, Name: req.Name}, nil
 }
