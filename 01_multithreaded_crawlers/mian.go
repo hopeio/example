@@ -18,7 +18,7 @@ func main() {
 
 func fetch(page string) *crawler.Request {
 	return &crawler.Request{
-		TaskMeta: crawler.TaskMeta{Key: page},
+		Key: page,
 		TaskFunc: func(ctx context.Context) ([]*crawler.Request, error) {
 			reader, err := client.NewGetRequest("https://m.yeitu.com/meinv/xinggan/20240321_33578_"+page+".html").AddHeader(httpi.HeaderUserAgent, client.UserAgentIphone).DoStream(nil)
 			if err != nil {
@@ -43,7 +43,7 @@ func fetch(page string) *crawler.Request {
 
 func downloadImg(src string) *crawler.Request {
 	return &crawler.Request{
-		TaskMeta: crawler.TaskMeta{Key: src},
+		Key: src,
 		TaskFunc: func(ctx context.Context) ([]*crawler.Request, error) {
 			err := client.DownloadFile("E:/tmp/"+path.Base(src), src)
 			if err != nil {
