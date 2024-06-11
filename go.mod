@@ -5,7 +5,7 @@ go 1.22.0
 require (
 	github.com/PuerkitoBio/goquery v1.9.1
 	github.com/gin-gonic/gin v1.10.0
-	github.com/hopeio/cherry v1.12.6
+	github.com/hopeio/cherry v1.12.8
 	github.com/hopeio/pick v1.5.9
 	google.golang.org/protobuf v1.34.1
 )
