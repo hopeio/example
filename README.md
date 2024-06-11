@@ -18,3 +18,6 @@
 
 # 优雅的 golang protobuf tag注入插件
 目录: [protopatch](https://github.com/hopeio/collection/tree/main/protopatch)
+
+# http请求库
+目录: [httpclient](https://github.com/hopeio/collection/tree/main/httpclient)
