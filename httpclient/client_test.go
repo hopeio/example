@@ -9,7 +9,7 @@ import (
 )
 
 func TestUserList(t *testing.T) {
-	req := client.NewRequest("http://localhost:8080/api/v1/user", "GET").AddHeader("Content-Type", "application/json").LogLevel(client.LogLevelInfo)
+	req := client.NewRequest("GET", "http://localhost:8080/api/v1/user").AddHeader("Content-Type", "application/json").LogLevel(client.LogLevelInfo)
 	var res httpi.ResData[UserListRes]
 	err := req.Do(&Page{1, 2}, &res)
 	if err != nil {
@@ -19,7 +19,7 @@ func TestUserList(t *testing.T) {
 }
 
 func TestUserListV2(t *testing.T) {
-	req := clientv2.NewRequest[httpi.ResData[UserListRes]]("http://localhost:8080/api/v1/user", "GET")
+	req := clientv2.NewRequest[httpi.ResData[UserListRes]]("GET", "http://localhost:8080/api/v1/user")
 	res, err := req.Do(&Page{1, 2})
 	if err != nil {
 		t.Log(err)
