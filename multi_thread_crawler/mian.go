@@ -6,6 +6,7 @@ import (
 	httpi "github.com/hopeio/cherry/utils/net/http"
 	"github.com/hopeio/cherry/utils/net/http/client"
 	"github.com/hopeio/cherry/utils/scheduler/crawler"
+	"net/http"
 	"path"
 	"strconv"
 )
@@ -20,7 +21,8 @@ func fetch(page string) *crawler.Request {
 	return &crawler.Request{
 		Key: page,
 		TaskFunc: func(ctx context.Context) ([]*crawler.Request, error) {
-			reader, err := client.NewGetRequest("https://m.yeitu.com/meinv/xinggan/20240321_33578_"+page+".html").AddHeader(httpi.HeaderUserAgent, client.UserAgentIphone).DoStream(nil)
+			reader, err := client.New().AddHeader(httpi.HeaderUserAgent, client.UserAgentIphone).Request(http.MethodGet,
+				"https://m.yeitu.com/meinv/xinggan/20240321_33578_"+page+".html").DoStream(nil)
 			if err != nil {
 				return nil, err
 			}
@@ -45,7 +47,7 @@ func downloadImg(src string) *crawler.Request {
 	return &crawler.Request{
 		Key: src,
 		TaskFunc: func(ctx context.Context) ([]*crawler.Request, error) {
-			err := client.DownloadFile("E:/tmp/"+path.Base(src), src)
+			err := client.Download("E:/tmp/"+path.Base(src), src)
 			if err != nil {
 				return nil, err
 			}

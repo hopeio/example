@@ -9,7 +9,7 @@ import (
 )
 
 func TestUserList(t *testing.T) {
-	req := client.NewRequest("GET", "http://localhost:8080/api/v1/user").AddHeader("Content-Type", "application/json").LogLevel(client.LogLevelInfo)
+	req := client.New().AddHeader("Content-Type", "application/json").LogLevel(client.LogLevelInfo).Request("GET", "http://localhost:8080/api/v1/user")
 	var res httpi.ResData[UserListRes]
 	err := req.Do(&Page{1, 2}, &res)
 	if err != nil {
