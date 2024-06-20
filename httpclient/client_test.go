@@ -9,9 +9,9 @@ import (
 )
 
 func TestUserList(t *testing.T) {
-	req := client.New().AddHeader("Content-Type", "application/json").LogLevel(client.LogLevelInfo).Request("GET", "http://localhost:8080/api/v1/user")
 	var res httpi.ResData[UserListRes]
-	err := req.Do(&Page{1, 2}, &res)
+	client := client.New().AddHeader("Content-Type", "application/json").LogLevel(client.LogLevelInfo)
+	err := client.Request("GET", "http://localhost:8080/api/v1/user").Do(&Page{1, 2}, &res)
 	if err != nil {
 		t.Log(err)
 	}
@@ -19,10 +19,10 @@ func TestUserList(t *testing.T) {
 }
 
 func TestUserListV2(t *testing.T) {
-	req := clientv2.NewRequest[httpi.ResData[UserListRes]]("GET", "http://localhost:8080/api/v1/user")
-	res, err := req.Do(&Page{1, 2})
+	res, err := clientv2.NewRequest[httpi.ResData[UserListRes]]("GET", "http://localhost:8080/api/v1/user").Do(&Page{1, 2})
 	if err != nil {
 		t.Log(err)
 	}
+
 	spew.Dump(res)
 }
