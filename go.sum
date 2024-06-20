@@ -196,6 +196,8 @@ github.com/hopeio/cherry v1.14.5 h1:AI1jHu5u+Elt0AEP1jS3QUbkpnP5kgdyArdFCYfTeag=
 github.com/hopeio/cherry v1.14.5/go.mod h1:8UWp2NUrsXXzFqMowRR8wmJXFKb/SHxQrvkhx+04GDg=
 github.com/hopeio/cherry v1.15.0 h1:5hCuP0FdL2QxoEqI7wThJdkC/p4PKskvSTYNcsd02z4=
 github.com/hopeio/cherry v1.15.0/go.mod h1:8UWp2NUrsXXzFqMowRR8wmJXFKb/SHxQrvkhx+04GDg=
+github.com/hopeio/cherry v1.15.1 h1:dmF/CaaSikxGbjLuJ3tcWKv3ZLGf/jWkifJqfasdRNQ=
+github.com/hopeio/cherry v1.15.1/go.mod h1:8UWp2NUrsXXzFqMowRR8wmJXFKb/SHxQrvkhx+04GDg=
 github.com/hopeio/pick v1.3.6 h1:ptSxoiSkSbYnuLfYye5Ki3whrJxcc7BtUh/Q37CbXt4=
 github.com/hopeio/pick v1.3.6/go.mod h1:8d2KjIIc+ENqQ+RjkNjG8TrzKPFz/zhSuNLUmzGsoJI=
 github.com/hopeio/pick v1.5.4 h1:Dd7/wTdvDVLdNt3W/NPRk836e/CF+cB+uynfCmfmRFc=
@@ -225,6 +227,8 @@ github.com/hopeio/pick v1.5.18-0.20240620112356-800de04c5962 h1:ZRKIGi/NltxwoXo/
 github.com/hopeio/pick v1.5.18-0.20240620112356-800de04c5962/go.mod h1:/S+r0NiSX/0CxgATErrCuP6hpEtTAxyZuh7yDVG6dOA=
 github.com/hopeio/pick v1.5.19 h1:bT4ThJyvk2jQC52Y1PHRE/s+sO3yN9aRskkRY3EB66A=
 github.com/hopeio/pick v1.5.19/go.mod h1:ysCvN9E0XZtYHVTVtT+6LQDOZ4UebPVp/gJ9livYob4=
+github.com/hopeio/pick v1.5.20 h1:y5QxiM47a2EcDxvIM6NKsWSa+1PDb4ME1y0GbpYguRI=
+github.com/hopeio/pick v1.5.20/go.mod h1:6zdIT7h4Ffg3/r7T+wW43k23IZ7MwQH3Dv/o6Lr3cC0=
 github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af/go.mod h1:Nht3zPeWKUH0NzdCt2Blrr5ys8VGpn0CEB0cQHVjt7k=
 github.com/jmespath/go-jmespath v0.4.0 h1:BEgLn5cpjn8UN1mAw4NjwDrS35OdebyEtFe+9YPoQUg=
 github.com/jmespath/go-jmespath v0.4.0/go.mod h1:T8mJZnbsbmF+m6zOOFylbeCJqk5+pHWvzYPziyZiYoo=
