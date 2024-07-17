@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/hopeio/cherry/initialize"
-	"github.com/hopeio/cherry/initialize/conf_center/nacos"
-	"github.com/hopeio/cherry/initialize/conf_dao/mqtt"
+	"github.com/hopeio/initialize"
+	"github.com/hopeio/initialize/conf_center/nacos"
+	"github.com/hopeio/initialize/conf_dao/mqtt"
 	"time"
 )
 

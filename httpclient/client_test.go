@@ -2,9 +2,9 @@ package client
 
 import (
 	"github.com/davecgh/go-spew/spew"
-	httpi "github.com/hopeio/cherry/utils/net/http"
-	"github.com/hopeio/cherry/utils/net/http/client"
-	clientv2 "github.com/hopeio/cherry/utils/net/http/client/v2"
+	httpi "github.com/hopeio/utils/net/http"
+	"github.com/hopeio/utils/net/http/client"
+	clientv2 "github.com/hopeio/utils/net/http/client/v2"
 	"testing"
 )
 

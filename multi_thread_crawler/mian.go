@@ -3,9 +3,9 @@ package main
 import (
 	"context"
 	"github.com/PuerkitoBio/goquery"
-	httpi "github.com/hopeio/cherry/utils/net/http"
-	"github.com/hopeio/cherry/utils/net/http/client"
-	"github.com/hopeio/cherry/utils/scheduler/crawler"
+	httpi "github.com/hopeio/utils/net/http"
+	"github.com/hopeio/utils/net/http/client"
+	"github.com/hopeio/utils/scheduler/crawler"
 	"net/http"
 	"path"
 	"strconv"
