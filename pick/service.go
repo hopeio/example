@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/hopeio/context/ginctx"
 	"github.com/hopeio/pick"
-	errorsi "github.com/hopeio/utils/errors"
+	"github.com/hopeio/utils/errors/errcode"
 	"strconv"
 )
 
@@ -33,7 +33,7 @@ func (*UserService) GetErr(ctx *ginctx.Context, req *Req) (*User, error) {
 	})
 	fmt.Println(req.Name)
 	// dao
-	return nil, &errorsi.ErrRep{Code: 1, Message: "error"}
+	return nil, &errcode.ErrRep{Code: 1, Message: "error"}
 }
 
 func (*UserService) Signup(ctx *ginctx.Context, req *Signup) (*User, error) {
