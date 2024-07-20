@@ -1,0 +1,1 @@
+`go run cherrywithinit/user/main.go -c cherrywithinit/user/config.toml`
