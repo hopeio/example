@@ -12,9 +12,8 @@ Format = 'toml'
 Type = 'local'
 
 [dev.ConfigCenter.local]
-AutoReload = false
-AutoReloadInterval = 0
 AutoReloadType = ''
+TimerInterval = 0
 ConfigPath = 'local.toml'
 
 [dev.ConfigCenter.nacos]
