@@ -9,7 +9,7 @@ import (
 func main() {
 	gin.SetMode(gin.ReleaseMode)
 	server := gin.New()
-	pickgin.Register(server, true, &UserService{})
+	pickgin.Register(server, &UserService{})
 	log.Println("visit http://localhost:8080")
 	log.Fatal(server.Run(":8080"))
 }
