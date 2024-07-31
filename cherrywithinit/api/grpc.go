@@ -1,8 +1,8 @@
 package api
 
 import (
-	"github.com/hopeio/cherry/_example/protobuf/user"
-	userService "github.com/hopeio/cherry/_example/user/service"
+	"github.com/hopeio/collection/cherrywithinit/proto"
+	userService "github.com/hopeio/collection/cherrywithinit/service"
 	"google.golang.org/grpc"
 )
 

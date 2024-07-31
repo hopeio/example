@@ -1,0 +1,91 @@
+
+[Customize]
+FontSaveDir = ''
+LuosimaoAPIKey = ''
+LuosimaoSuperPW = ''
+LuosimaoVerifyURL = ''
+PageSize = 0
+PassSalt = ''
+PrefixUrl = ''
+QrCodeSaveDir = ''
+TokenMaxAge = 86400000000000
+TokenSecret = ''
+Volume = ''
+
+[GORMDB]
+Charset = ''
+ConnMaxIdleTime = 0
+ConnMaxLifetime = 0
+Database = ''
+EnablePrometheus = false
+EnableStdLogger = true
+Host = ''
+MaxIdleConns = 0
+MaxOpenConns = 0
+Password = ''
+Port = 0
+PrometheusConfigs = []
+TimeZone = ''
+Type = 'sqlite'
+
+[Server]
+EnableCors = false
+EnableDebugApi = false
+EnableGrpcWeb = false
+EnablePrometheus = false
+EnableTelemetry = false
+MetricsInterval = 0
+Name = ''
+StopTimeout = 0
+ApiDocDir = "./cherrywithinit/proto/apidoc"
+
+[Server.Cors]
+AllowCredentials = false
+AllowPrivateNetwork = false
+AllowedHeaders = []
+AllowedMethods = []
+AllowedOrigins = []
+Debug = false
+ExposedHeaders = []
+MaxAge = 0
+OptionsPassthrough = false
+OptionsSuccessStatus = 0
+
+[Server.Gin]
+AppEngine = false
+ContextWithFallback = false
+ForwardedByClientIP = false
+HandleMethodNotAllowed = false
+MaxMultipartMemory = 0
+RedirectFixedPath = false
+RedirectTrailingSlash = false
+RemoteIPHeaders = []
+RemoveExtraSlash = false
+TrustedPlatform = ''
+UnescapePathValues = false
+UseH2C = false
+UseRawPath = false
+
+[Server.Http]
+Addr = ':8080'
+CertFile = ''
+DisableGeneralOptionsHandler = false
+IdleTimeout = 0
+KeyFile = ''
+MaxHeaderBytes = 0
+ReadHeaderTimeout = 0
+ReadTimeout = 0
+WriteTimeout = 0
+
+[Server.Http2]
+IdleTimeout = 0
+MaxConcurrentStreams = 0
+MaxDecoderHeaderTableSize = 0
+MaxEncoderHeaderTableSize = 0
+MaxHandlers = 0
+MaxReadFrameSize = 0
+MaxUploadBufferPerConnection = 0
+MaxUploadBufferPerStream = 0
+PermitProhibitedCipherSuites = false
+
+

@@ -11,7 +11,7 @@ go get github.com/hopeio/pick@master
 目录: [marquee_love](https://github.com/hopeio/collection/tree/main/marquee_love)
 
 # golang 切片分配回收测试打挂windows
-目录: [simple_golang_code_hangs_windows](https://github.com/hopeio/collection/tree/main/simple_golang_code_hangs_windows)
+目录: [golang_oom](https://github.com/hopeio/collection/tree/main/golang_oom)
 
 # 基于的注入api快速开发框架,类springmvc体验
 目录: [pick](https://github.com/hopeio/collection/tree/main/pick)

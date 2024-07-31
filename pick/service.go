@@ -33,7 +33,7 @@ func (*UserService) GetErr(ctx *ginctx.Context, req *Req) (*User, error) {
 	})
 	fmt.Println(req.Name)
 	// dao
-	return nil, &errcode.ErrRep{Code: 1, Message: "error"}
+	return nil, &errcode.ErrRep{Code: 1, Msg: "error"}
 }
 
 func (*UserService) Signup(ctx *ginctx.Context, req *Signup) (*User, error) {

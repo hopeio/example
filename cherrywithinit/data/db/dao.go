@@ -1,4 +1,4 @@
-package dao
+package db
 
 import (
 	"github.com/hopeio/context/httpctx"

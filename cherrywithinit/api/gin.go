@@ -2,8 +2,8 @@ package api
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/hopeio/cherry/_example/protobuf/user"
-	"github.com/hopeio/cherry/_example/user/service"
+	"github.com/hopeio/collection/cherrywithinit/proto"
+	"github.com/hopeio/collection/cherrywithinit/service"
 	"net/http"
 )
 

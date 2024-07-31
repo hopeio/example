@@ -4,8 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	"github.com/hopeio/cherry"
-	"github.com/hopeio/initialize/conf_dao/gormdb/postgres"
-	"github.com/hopeio/initialize/conf_dao/redis"
+	"github.com/hopeio/initialize/conf_dao/gormdb/sqlite"
 	"github.com/hopeio/utils/io/fs"
 	timei "github.com/hopeio/utils/time"
 	"runtime"
@@ -56,10 +55,8 @@ func (c *config) InitAfterInject() {
 // dao dao.
 type dao struct {
 	// GORMDB 数据库连接
-	GORMDB postgres.DB
+	GORMDB sqlite.DB
 	StdDB  *sql.DB
-	// RedisPool Redis连接池
-	Redis redis.Client
 }
 
 func (d *dao) InitBeforeInject() {

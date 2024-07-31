@@ -4,7 +4,7 @@ Env = "dev"
 
 [dev]
 debug = true
-ConfigTemplateDir = "./cherrywithinit/user"
+ConfigTemplateDir = "./cherrywithinit"
 
 [dev.ConfigCenter]
 Format = "toml"
@@ -12,7 +12,7 @@ Type = "local"
 NoInject = ["Apollo","Etcd", "Es"]
 
 [dev.ConfigCenter.local]
-ConfigPath = "./cherrywithinit/user/local.toml"
+ConfigPath = "./cherrywithinit/local.toml"
 ReloadType = "fsnotify"
 
 [test]

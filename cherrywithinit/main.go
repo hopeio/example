@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/hopeio/cherry"
-	"github.com/hopeio/cherry/_example/user/api"
-	"github.conm/hopeio/collection/cherrywithinit/confdao"
+	"github.com/hopeio/collection/cherrywithinit/api"
+	"github.com/hopeio/collection/cherrywithinit/confdao"
 
 	"github.com/hopeio/initialize"
 	"github.com/hopeio/initialize/conf_center/nacos"
