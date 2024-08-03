@@ -20,7 +20,7 @@ func main() {
 func fetch(page string) *crawler.Request {
 	return &crawler.Request{
 		Key: page,
-		TaskFunc: func(ctx context.Context) ([]*crawler.Request, error) {
+		Run: func(ctx context.Context) ([]*crawler.Request, error) {
 			reader, err := client.New().AddHeader(httpi.HeaderUserAgent, client.UserAgentIphone).Request(http.MethodGet,
 				"https://m.yeitu.com/meinv/xinggan/20240321_33578_"+page+".html").DoStream(nil)
 			if err != nil {
@@ -46,7 +46,7 @@ func fetch(page string) *crawler.Request {
 func downloadImg(src string) *crawler.Request {
 	return &crawler.Request{
 		Key: src,
-		TaskFunc: func(ctx context.Context) ([]*crawler.Request, error) {
+		Run: func(ctx context.Context) ([]*crawler.Request, error) {
 			err := client.Download("E:/tmp/"+path.Base(src), src)
 			if err != nil {
 				return nil, err
