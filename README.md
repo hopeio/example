@@ -2,7 +2,7 @@
 代码合集
 
 go get github.com/hopeio/cherry@main
-go get github.com/hopeio/pick@master
+go get github.com/hopeio/pick@main
 
 # golang多线程爬虫
 目录: [multi_thread_crawler](https://github.com/hopeio/collection/tree/main/multi_thread_crawler)
