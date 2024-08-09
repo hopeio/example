@@ -41,11 +41,11 @@ type serverConfig struct {
 
 }
 
-func (c *config) InitBeforeInject() {
+func (c *config) BeforeInject() {
 	c.Customize.TokenMaxAge = timei.Day
 }
 
-func (c *config) InitAfterInject() {
+func (c *config) AfterInject() {
 	if runtime.GOOS == "windows" {
 	}
 
@@ -59,15 +59,15 @@ type dao struct {
 	StdDB  *sql.DB
 }
 
-func (d *dao) InitBeforeInject() {
+func (d *dao) BeforeInject() {
 	d.GORMDB.Conf.Gorm.NowFunc = time.Now
 }
 
-func (d *dao) InitAfterInjectConfig() {
+func (d *dao) AfterInjectConfig() {
 	fmt.Println("这里后执行")
 }
 
-func (d *dao) InitAfterInject() {
+func (d *dao) AfterInject() {
 	db := d.GORMDB
 	db.Callback().Create().Remove("gorm:save_before_associations")
 	db.Callback().Create().Remove("gorm:save_after_associations")

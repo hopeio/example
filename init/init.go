@@ -15,11 +15,11 @@ type Config struct {
 	Auth Auth
 }
 
-func (c *Config) InitBeforeInject() {
+func (c *Config) BeforeInject() {
 	c.A = "A"
 }
 
-func (c *Config) InitAfterInject() {
+func (c *Config) AfterInject() {
 	if c.A == "B" {
 		c.A = "A"
 	}
@@ -37,15 +37,15 @@ type Dao struct {
 	//DB   postgres.DB
 }
 
-func (d *Dao) InitBeforeInject() {
+func (d *Dao) BeforeInject() {
 
 }
 
-func (d *Dao) InitAfterInjectConfig() {
+func (d *Dao) AfterInjectConfig() {
 
 }
 
-func (d *Dao) InitAfterInject() {
+func (d *Dao) AfterInject() {
 	if token := d.Mqtt.Publish("test", 0, false, "test"); token.Wait() && token.Error() != nil {
 		panic(token.Error())
 	}
