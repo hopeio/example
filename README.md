@@ -13,7 +13,7 @@ go get github.com/hopeio/pick@main
 # golang 切片分配回收测试打挂windows
 目录: [golang_oom](https://github.com/hopeio/collection/tree/main/golang_oom)
 
-# 基于的注入api快速开发框架,类springmvc体验
+# 基于注入的api快速开发框架,类springmvc体验
 目录: [pick](https://github.com/hopeio/collection/tree/main/pick)
 
 # 应用初始化库，帮你减少样板代码
