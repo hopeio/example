@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/hopeio/cherry"
 	"github.com/hopeio/initialize/conf_dao/gormdb/sqlite"
-	"github.com/hopeio/utils/fs"
+	"github.com/hopeio/utils/os/fs"
 	timei "github.com/hopeio/utils/time"
 	"runtime"
 	"time"
