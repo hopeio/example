@@ -2,8 +2,6 @@ module github.com/hopeio/collection
 
 go 1.23
 
-toolchain go1.23.0
-
 require (
 	github.com/PuerkitoBio/goquery v1.9.2
 	github.com/alta/protopatch v0.5.3
