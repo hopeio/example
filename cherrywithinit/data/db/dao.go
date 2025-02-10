@@ -1,9 +1,9 @@
 package db
 
 import (
+	"github.com/hopeio/collection/cherrywithinit/model"
 	"github.com/hopeio/context/httpctx"
 	"github.com/hopeio/utils/log"
-	"github.conm/hopeio/collection/cherrywithinit/user/model"
 	"gorm.io/gorm"
 )
 
