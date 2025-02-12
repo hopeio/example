@@ -10,12 +10,12 @@ require (
 	github.com/gin-gonic/gin v1.10.0
 	github.com/gofiber/fiber/v3 v3.0.0-beta.3
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.24.0
-	github.com/hopeio/cherry v1.17.3
-	github.com/hopeio/context v0.1.3
+	github.com/hopeio/cherry v1.17.5
+	github.com/hopeio/context v0.1.5
 	github.com/hopeio/initialize v0.0.25
-	github.com/hopeio/pick v1.8.9
-	github.com/hopeio/protobuf v0.1.5
-	github.com/hopeio/utils v0.6.1
+	github.com/hopeio/pick v1.8.11
+	github.com/hopeio/protobuf v0.1.7
+	github.com/hopeio/utils v0.7.1
 	google.golang.org/genproto/googleapis/api v0.0.0-20241209162323-e6fa225c2576
 	google.golang.org/grpc v1.69.0
 	google.golang.org/protobuf v1.35.2
