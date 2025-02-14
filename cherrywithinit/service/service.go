@@ -3,12 +3,12 @@ package service
 import (
 	"context"
 	"github.com/gin-gonic/gin"
+	"github.com/hopeio/collection/cherrywithinit/api/errcode"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 	"strconv"
 
 	"github.com/hopeio/collection/cherrywithinit/proto"
 	"github.com/hopeio/context/httpctx"
-	"github.com/hopeio/protobuf/errcode"
 )
 
 type UserService struct {
