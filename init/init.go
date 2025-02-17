@@ -55,9 +55,9 @@ var config Config
 var dao Dao
 
 func main() {
-	defer initialize.Start(&config, &dao, &nacos.Nacos{})()
+	defer initialize.Start(&config, &dao, initialize.WithConfigCenter(&nacos.Nacos{}))()
 	fmt.Println(config)
-	initialize.RegisterDeferFunc(func() {
+	initialize.RegisterDefer(func() {
 		fmt.Println("defer")
 	})
 }
