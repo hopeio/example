@@ -51,13 +51,12 @@ func (d *Dao) AfterInject() {
 	}
 }
 
-var config Config
-var dao Dao
+var global = initialize.NewGlobal[*Config, *Dao](nacos.ConfigCenter)
 
 func main() {
-	defer initialize.Start(&config, &dao, initialize.WithConfigCenter(&nacos.Nacos{}))()
-	fmt.Println(config)
-	initialize.RegisterDefer(func() {
+	defer global.Cleanup()
+	fmt.Println(global.Config)
+	global.Defer(func() {
 		fmt.Println("defer")
 	})
 }
