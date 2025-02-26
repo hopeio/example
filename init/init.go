@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/hopeio/initialize"
 	"github.com/hopeio/initialize/conf_center/nacos"
-	"github.com/hopeio/initialize/conf_dao/mqtt"
+	"github.com/hopeio/initialize/dao/mqtt"
 	"time"
 )
 
