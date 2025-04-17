@@ -4,7 +4,7 @@ import "github.com/hopeio/utils/dao/database/datatypes"
 
 type TestJson struct {
 	ID        uint                      `json:"id" gorm:"primaryKey"`
-	JsonArray datatypes.ArrayJsonT[Foo] `json:"json_array" gorm:"jsonb"`
+	JsonArray datatypes.NullJson[[]Foo] `json:"json_array" gorm:"jsonb"`
 }
 
 type Foo struct {
